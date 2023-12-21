@@ -19,6 +19,9 @@ h1{
     border-radius: 50px;
     border: solid;
 }
+#dir{
+    color:rgb(20, 20, 37);
+}
 .itens{
     background: rgba(66, 58, 58, 0.76);
     color:black;

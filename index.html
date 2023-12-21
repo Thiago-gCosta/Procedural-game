@@ -15,11 +15,12 @@
     <input type="button" onclick="Baixo()" value="s" class="direcional">
     <input type="button" onclick="Direita()" value="d" class="direcional"><br>
     <br>
-    </div>
     <input type="range" value="50" min="20" max="50" oninput="this.nextElementSibling.value = this.value" id="mode">
-    <output>%</output>
-    <p>Diversidade de biomas</p>
+    <output id="dir"></output>
+    <p id="dir">Diversidade de biomas</p>
+    </div>
     <input type="button" onclick="Game()" value="Play" class="direcional">
+    <input type="button" onclick="Redeclarar()" value="&circlearrowleft;" class="direcional">
     <p id="saida"><strong></strong></p>
     <ul class="itens">Iventário:
         <li id="iten"></li>
