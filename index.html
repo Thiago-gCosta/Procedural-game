@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procedural Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1><strong>Procedural Game</strong></h1>
+    <div class="botoes">
+    <input type="button" onclick="Cima()" value="w" class="direcional"><br>
+    <input type="button" onclick="Esquerda()" value="a" class="direcional">
+    <input type="button" onclick="Baixo()" value="s" class="direcional">
+    <input type="button" onclick="Direita()" value="d" class="direcional"><br>
+    <br>
+    </div>
+    <input type="range" value="50" min="20" max="50" oninput="this.nextElementSibling.value = this.value" id="mode">
+    <output>%</output>
+    <p>Diversidade de biomas</p>
+    <input type="button" onclick="Game()" value="Play" class="direcional">
+    <p id="saida"><strong></strong></p>
+    <ul class="itens">Iventário:
+        <li id="iten"></li>
+        <li id="pedra"></li>
+    </ul>
+    <script src="jogo.js"></script>
+</body>
+</html>
