@@ -3,29 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Procedural Game</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Procedural Game 1.1</title>
 </head>
 <body>
-    <h1><strong>Procedural Game</strong></h1>
-    <div class="botoes">
-    <input type="button" onclick="Cima()" value="w" class="direcional"><br>
-    <input type="button" onclick="Esquerda()" value="a" class="direcional">
-    <input type="button" onclick="Baixo()" value="s" class="direcional">
-    <input type="button" onclick="Direita()" value="d" class="direcional"><br>
-    <br>
-    <input type="range" value="50" min="20" max="50" oninput="this.nextElementSibling.value = this.value" id="mode">
-    <output id="dir"></output>
-    <p id="dir">Diversidade de biomas</p>
+    <header class="title">
+        <h1>Procedural Game 1.1 </h1>
+        <p2>2023 &copysr; &COPY;</p>
+        <p3>Thiago Costa</p2>
+        <input type="button" value="Play" onclick="Game()" class="botão" id="play">
+        <input type="button" value="  &circlearrowleft; " onclick="Redeclarar()" class="botão" id="play2">
+    </header>
+    <div class="Game-container">
+            <p id="saida"></p>
+            <ul>Iventário:
+                <div class="itens">
+                <li id="iten"></li>
+                <li id="pedra"></li>
+                </div>
+            </ul>
     </div>
-    <input type="button" onclick="Game()" value="Play" class="direcional">
-    <input type="button" onclick="Redeclarar()" value="&circlearrowleft;" class="direcional">
-    <p id="saida"><strong></strong></p>
-    <ul class="itens">Iventário:
-        <li id="iten"></li>
-        <li id="pedra"></li>
-    </ul>
-    <script src="jogo.js"></script>
+    <script src="Game.js"></script>
 </body>
 </html>
